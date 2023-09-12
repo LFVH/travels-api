@@ -4,7 +4,16 @@
 
 # Learn more from ready-to-use templates: https://www.gitpod.io/docs/introduction/getting-started/quickstart
 
+
 tasks:
-  - init: mvn install -DskipTests=false
+  - init: mvn package
+    command: mvn spring-boot:run
+    name: Run APITravels
+
+vscode:
+  extensions:
+    - VMware.vscode-boot-dev-pack
+    - vscjava.vscode-java-pack
+    
 
 
